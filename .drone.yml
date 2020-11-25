@@ -11,7 +11,7 @@ steps:
 
 - name: publish
   image: plugins/docker
-  repo: flask_backend
+  repo: aleda145/flask_backend
   settings:
    username:
      from_secret: docker_username
