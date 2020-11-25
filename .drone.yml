@@ -8,3 +8,11 @@ steps:
   commands:
   - pip install -r requirements.txt
   - pytest
+
+- name: publish
+  image: plugins/docker
+  settings:
+   username:
+     from_secret: docker_username
+   password:
+     from_secret: docker_password
