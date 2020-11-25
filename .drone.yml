@@ -12,6 +12,7 @@ steps:
 - name: publish
   image: plugins/docker
   repo: aleda145/flask_backend
+  tags: latest
   settings:
    username:
      from_secret: docker_username
