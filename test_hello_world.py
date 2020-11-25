@@ -1,7 +1,5 @@
+from app import return_2
 import pytest
 
-def test_ok():
-    assert 1==1
-
-def test_fail():
-    assert 1==0
+def test_return_2():
+    assert return_2() == "2"
