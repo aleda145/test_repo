@@ -8,8 +8,6 @@ ENV PYTHONDONTWRITEBYTECODE 1
 # Turns off buffering for easier container logging
 ENV PYTHONUNBUFFERED 1
 
-# install package on a system level that is needed by postgresql
-
 WORKDIR /app
 
 # Install pip requirements
