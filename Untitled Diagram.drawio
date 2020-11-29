@@ -1,1 +1,31 @@
-<mxfile host="app.diagrams.net" modified="2020-11-29T12:57:35.507Z" agent="5.0 (X11)" version="13.10.4" etag="zqS8Jn-esqswDW6VkqhI" type="github"><diagram id="zT1P_aaiEAX8ucu5IzGW">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-11-29T12:58:44.889Z" agent="5.0 (X11)" etag="eC0HSTgwjmgPZskIBNMt" version="13.10.4" type="github">
+  <diagram id="zT1P_aaiEAX8ucu5IzGW" name="Page-1">
+    <mxGraphModel dx="1422" dy="1805" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3k6nriDuO7AtOeKEkObB-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3k6nriDuO7AtOeKEkObB-1" target="3k6nriDuO7AtOeKEkObB-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3k6nriDuO7AtOeKEkObB-1" value="&lt;div&gt;Checkout&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3k6nriDuO7AtOeKEkObB-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3k6nriDuO7AtOeKEkObB-3" target="3k6nriDuO7AtOeKEkObB-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3k6nriDuO7AtOeKEkObB-3" value="Test" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3k6nriDuO7AtOeKEkObB-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3k6nriDuO7AtOeKEkObB-5" target="3k6nriDuO7AtOeKEkObB-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3k6nriDuO7AtOeKEkObB-5" value="Build Docker Image" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3k6nriDuO7AtOeKEkObB-7" value="Push image to Docker Hub" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
