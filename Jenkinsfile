@@ -1,7 +1,7 @@
 pipeline {
     environment {
         registry = "aleda145/flask_backend"
-        registryCredential = 'aleda145' 
+        registryCredential = 'dockerhub_id' 
         dockerImage = '' 
     }
     agent any
@@ -25,9 +25,13 @@ pipeline {
                 }      
             }
         }
-        stage('Deploy') {
+        stage('Publish') {
             steps {
-                echo 'Deploying....'
+                script {
+                    docker.withRegistry( '', registryCredential ) {
+                        dockerImage.push() 
+                    } 
+                }
             }
         }
     }
