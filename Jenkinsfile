@@ -15,7 +15,7 @@ pipeline {
             }
             steps {
                 sh 'pip install --user -r requirements.txt'
-                sh 'pytest'
+                sh 'pytest test_hello_world.py'
             }
         }
         stage('Build') {
