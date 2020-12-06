@@ -13,7 +13,7 @@ steps:
   image: plugins/docker
   settings:
     repo: aleda145/flask_backend
-    tags: latest
+    tags: drone
     username:
       from_secret: docker_username
     password:

@@ -21,7 +21,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    dockerImage = docker.build registry + ":latest" 
+                    dockerImage = docker.build registry + ":jenkins" 
                 }      
             }
         }
