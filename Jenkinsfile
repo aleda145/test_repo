@@ -1,9 +1,17 @@
 pipeline {
-    agent { dockerfile true }
+    environment {
+        registry = "aleda145/flask_backend"
+        registryCredential = 'aleda145' 
+        dockerImage = '' 
+    }
+    agent any
+
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                script {
+                    dockerImage = docker.build registry + ":latest" 
+                }      
             }
         }
         stage('Test') {
