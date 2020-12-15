@@ -1,0 +1,23 @@
+---
+resources:
+- name: testrepo
+  type: git
+  source:
+    uri: https://github.com/aleda145/CI_test_repo
+    branch: main
+
+jobs:
+- name: unit
+  plan:
+  - get: testrepo
+    trigger: true
+  - task: unit
+    file: testrepo/concourse_test.yml
+
+# - name: build
+#   plan:
+#   - get: test_repo
+#     passed: [unit]
+#     trigger: true
+#   - task: run-build
+#     file: test_repo/concourse_build.yml
