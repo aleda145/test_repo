@@ -3,7 +3,7 @@ resources:
 - name: testrepo
   type: git
   source:
-    uri: https://github.com/aleda145/CI_test_repo
+    uri: https://github.com/aleda145/test_repo
     branch: main
 
 jobs:
