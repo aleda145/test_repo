@@ -6,6 +6,14 @@ resources:
     uri: https://github.com/aleda145/test_repo
     branch: main
 
+- name: flask-backend-docker-image
+  type: docker-image
+  source:
+    email: ((docker-hub-email))
+    username: ((docker-hub-username))
+    password: ((docker-hub-password))
+    repository: ((docker-hub-username))/flask_backend:concourse
+
 jobs:
 - name: unit
   plan:
@@ -14,10 +22,12 @@ jobs:
   - task: unit
     file: testrepo/concourse_test.yml
 
-# - name: build
-#   plan:
-#   - get: test_repo
-#     passed: [unit]
-#     trigger: true
-#   - task: run-build
-#     file: test_repo/concourse_build.yml
+- name: publish
+  public: true
+  plan:
+  - get: testrepo
+    passed: [unit]
+    trigger: true
+  - put: flask-backend-docker-image
+    params:
+      build: testrepo
