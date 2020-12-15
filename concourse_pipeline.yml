@@ -13,7 +13,7 @@ resources:
     username: ((docker-hub-username))
     password: ((docker-hub-password))
     repository: ((docker-hub-username))/flask_backend
-    tag: concourse
+    #tag: concourse
 
 jobs:
 - name: unit
