@@ -9,4 +9,4 @@ inputs:
 - name: testrepo
 
 run:
-  path: run_pytest.sh
+  path: testrepo/run_pytest.sh
